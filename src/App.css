@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, black, rgb(85, 6, 6));
+    overflow: hidden; 
+  }
+  
+  .form-container {
+    width: 40%;
+    max-height: 90%; 
+    padding: 40px;
+    background: linear-gradient(to bottom, #333, #800000);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="date"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    color: #cccccc;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="date"]:focus,
+  .form-group select:focus {
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    font-size: 16px;
+    color: #cccccc;
+    transition: all 0.3s;
+  }
+  
+  .form-group input[type="text"]:focus ~ label,
+  .form-group input[type="text"]:not(:placeholder-shown) ~ label,
+  .form-group input[type="email"]:focus ~ label,
+  .form-group input[type="email"]:not(:placeholder-shown) ~ label,
+  .form-group input[type="date"]:focus ~ label,
+  .form-group input[type="date"]:not(:placeholder-shown) ~ label,
+  .form-group select:focus ~ label,
+  .form-group select:not([value=""]) ~ label {
+    top: -20px;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .form-group .checkbox-label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
+  
+  .submit-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit-button {
+    width: 60%;
+    padding: 10px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background: #2f322f;
+  }
+  
